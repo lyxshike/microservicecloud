@@ -1,0 +1,15 @@
+server:
+  port: 3344
+  
+
+spring:
+  application:
+    name: microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lyxshike/microservicecloud-config/     # 配置git仓库的地址
+          # search-paths: microservicecloud-config                             # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: lyxshike                                      # git仓库的账号
+          password: l543421638                                    # git仓库的密码
